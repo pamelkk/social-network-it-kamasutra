@@ -4,13 +4,19 @@ import Message from "./Message/Message";
 import classes from "./Dialogs.module.css";
 
 const Dialogs = (props) => {
-  let dialogsElements = props.state.dialogs.map((dialog) => (
+  let dialogsElements = props.dialogsPage.dialogs.map((dialog) => (
     <DialogItem name={dialog.name} id={dialog.id} src={dialog.src} />
   ));
 
-  let messagesElements = props.state.messages.map((message) => (
+  let messagesElements = props.dialogsPage.messages.map((message) => (
     <Message message={message.message} />
   ));
+
+  let newMessageElement = React.createRef();
+
+  let addMessage = () => {
+    let text = newMessageElement.current.value;
+  }
 
   return (
     <div className={classes.wrapper}>
@@ -20,8 +26,8 @@ const Dialogs = (props) => {
         <div className={classes.messagesWindow}>
           <div className={classes.messages}>{messagesElements}</div>
           <div className={classes.newMessage}>
-            <textarea placeholder="Write message..."></textarea>
-            <button className={classes.buttonAdd}>Add Message</button>
+            <textarea ref={newMessageElement} placeholder="Write message..."></textarea>
+            <button onClick={addMessage} className={classes.buttonAdd}>Add Message</button>
           </div>
         </div>
       </div>

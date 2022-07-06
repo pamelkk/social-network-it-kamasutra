@@ -1,8 +1,12 @@
+import { rerenderEntireTree } from "../render";
+
+
 let state = {
     profilePage: {
         posts: [
             {id: 1, message: "Hi", likesCount: 15}, 
-            {id: 2, message: "It's my first post", likesCount: 20}]
+            {id: 2, message: "It's my first post", likesCount: 20}],
+        newPostText: "ira"
     },
     sidebar: {
         pages: [
@@ -28,6 +32,22 @@ let state = {
             {id: 7, name: "Kuper", src: "https://ria-m.tv/images/news/2019/03/146648.jpg?1629450510"}]
     }
             
+}
+
+export let addPost = () => {
+    let newPost = {
+        id: 5,
+        message: state.profilePage.newPostText,
+        likesCount: 0
+    };
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = "";
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 }
 
 
