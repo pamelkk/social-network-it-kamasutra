@@ -1,0 +1,73 @@
+.nav {
+  grid-area: n;
+  background-color: #65d0ce;
+  padding: 20px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.friendsOnline {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendsOnline h2 {
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 45px;
+}
+
+.friendsOnline a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.friendsOnline span {
+  align-self: center;
+}
+
+.friendsOnline img {
+  align-self: center;
+  border-radius: 50%;
+}
+
+#blink {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 25px;
+  right: 17px;
+  -webkit-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+}
+
+.friendsOnline li {
+  max-width: 60px;
+  display: flex;
+  position: relative;
+}
+
+@-webkit-keyframes blink {
+  0% { background-color: rgba(59, 209, 29, 1); }
+  50% { background-color: rgba(59, 209, 29, 0); }
+  100% { background-color: rgba(59, 209, 29, 1); }
+}
+@keyframes blink {
+  0% { background-color: rgba(59, 209, 29, 1); }
+  50% { background-color: rgba(59, 209, 29, 0); }
+  100% { background-color: rgba(59, 209, 29, 1); }
+}

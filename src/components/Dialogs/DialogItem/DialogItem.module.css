@@ -1,0 +1,33 @@
+.dialogItem {
+  display: flex;
+}
+
+.dialogItem:nth-of-type(n+2) {
+    margin-top: 5px;
+}
+
+.dialogItem a {
+    text-decoration: none;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .3s;
+    align-self: center;
+}
+
+.dialogItem .active {
+    color: #ff8b9e;
+}
+
+.dialogItem a:hover {
+    color: #ff8b9e;
+}
+
+.img {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 25px;
+    object-fit: cover;
+}

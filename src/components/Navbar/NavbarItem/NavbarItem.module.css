@@ -1,0 +1,19 @@
+.item {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.item:nth-of-type(n+1) {
+  margin-top: 10px;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all .3s;
+}
+
+.item a:hover {
+  color: #ff8b9e;
+}

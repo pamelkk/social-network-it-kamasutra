@@ -1,0 +1,19 @@
+.header {
+  grid-area: h;
+  background-color: #ff8b9e;
+  display: flex;
+}
+
+.image {
+  align-self: center;
+}
+
+.nameCite {
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  align-self: center;
+  margin-left: 20px;
+}

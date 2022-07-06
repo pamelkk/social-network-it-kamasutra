@@ -1,0 +1,40 @@
+.message {
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(40%, 82%, 81%, 0.15);
+    width: 80%;
+    word-break: break-all;
+}
+
+.dialog {
+    display: flex;
+    width: 45%;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.dialog:nth-of-type(n+1) {
+    margin-top: 10px;
+}
+
+.dialog:nth-of-type(even) {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.dialog:nth-of-type(odd) {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.dialog:nth-of-type(even) .img {
+    order: -1;
+    margin-right: 10px;
+}
+
+.dialog:nth-of-type(odd) .img {
+    margin-left: 10px;
+}
