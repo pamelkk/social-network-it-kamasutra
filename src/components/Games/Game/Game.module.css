@@ -1,0 +1,43 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    max-height: 183px;
+}
+
+.item a {
+    text-decoration: none;
+    align-self: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.item h2 {
+    align-self: center;
+    color: black;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.item a:hover h2 {
+    color: #ff8b9e;
+}
+
+.item:nth-of-type(n+1) {
+    margin-right: 25px;
+}
+
+.item:nth-of-type(n+6) {
+    margin-top: 40px;
+}
+
+.item:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.img {
+    border-radius: 50%;
+}

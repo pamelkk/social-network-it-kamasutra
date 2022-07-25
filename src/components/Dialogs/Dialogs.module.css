@@ -31,6 +31,8 @@
   flex-direction: column;
   overflow-y: scroll;
   min-height: 89%;
+  max-height: 643px;
+  box-sizing: border-box;
 }
 
 .newMessage {

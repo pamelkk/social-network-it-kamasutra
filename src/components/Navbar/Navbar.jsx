@@ -20,7 +20,7 @@ const Navbar = (props) => {
                 src="https://i.pinimg.com/236x/ed/0e/6e/ed0e6e3750115d9b9009deb0650b0086--cat-s-kitty-cats.jpg?nii=t"
                 width="40"
                 height="40"
-                alt="profile photo"
+                alt="profile pic"
               ></img>
               <span>Бостон</span>
               <span id={classes.blink}></span>
